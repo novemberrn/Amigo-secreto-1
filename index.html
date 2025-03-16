@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Amigo Secreto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   
+    <div class="logo">
+        <img src="amigo-secreto.png" alt="Logo" class="logo-img">
+        <h2>Amigo Secreto</h2>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-user-secret"></i> Generador de Amigo Secreto</h1>
+            
+            <div class="input-group">
+                <input type="text" id="nombre" placeholder="Nombre completo">
+                <button onclick="agregarNombre()"><i class="fas fa-plus"></i> Agregar</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="lista">
+                <h2><i class="fas fa-list-ul"></i> Participantes</h2>
+                <ul id="listaNombres"></ul>
+            </div>
+
+            <button class="btn-generar" onclick="generarSorteo()">
+                <i class="fas fa-random"></i> Generar Sorteo
+            </button>
+            
+            <div id="resultado" class="resultado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
